@@ -9,7 +9,7 @@ Gem::Specification.new do |gem|
   gem.email       = ["john@uxgent.co"]
   gem.homepage    = %q{https://github.com/johnantoni/backbone-deep-rails}
   gem.summary     = %q{Rails asset wrapper for backbone-deep-model}
-  gem.description = %q{Use the backbone-deep-model library https://github.com/powmedia/backbone-deep-model: "Improved support for models with nested attributes."}
+  gem.description = %q{Use the backbone-deep-model library to provide improved support for models with nested attributes. -> https://github.com/powmedia/backbone-deep-model"}
 
   gem.files = Dir["{lib,vendor}/**/*"] + ["MIT-LICENSE", "README.md"]
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
