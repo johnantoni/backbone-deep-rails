@@ -10,12 +10,13 @@ Gem::Specification.new do |gem|
   gem.homepage    = %q{https://github.com/johnantoni/backbone-deep-rails}
   gem.summary     = %q{Rails asset wrapper for backbone-deep-model}
   gem.description = %q{Use the backbone-deep-model library to provide improved support for models with nested attributes. -> https://github.com/powmedia/backbone-deep-model"}
+  gem.licenses = ['MIT']
 
   gem.files = Dir["{lib,vendor}/**/*"] + ["MIT-LICENSE", "README.md"]
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
-  
-  gem.add_development_dependency "rake"
-  gem.add_dependency "railties", "~> 3.1"
+
+  gem.add_development_dependency 'rake', '> 0'
+  gem.add_runtime_dependency 'railties', '> 3.1'
 end
